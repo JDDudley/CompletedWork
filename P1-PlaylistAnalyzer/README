@@ -1,0 +1,37 @@
+# P1-PlayList
+
+## Information
+- Authors:
+	- Jason Dudley
+	- BSU CS 121 instructors.
+- Course:
+	- CS121-002, Spring 2020
+- Last Version Published:
+	- February 25, 2020
+
+## Description
+This project uses the Song class written by Boise State University CS 121 instructors to gather information from user and create a playlist, which is sorted and analyzed by playtime.
+
+## Compiling & Running
+### Compiling
+	javac PlayList.java
+
+### Run Compiled Code
+	java PlayList
+
+User will be prompted to enter metadata information for 3 songs, which will be processed and displayed as a sorted playlist.
+
+## Grading Criteria Guide
+- ✔Scanner object that reads input
+- ✔Prompt for song information for three (3) songs
+	- ✔Title
+	- ✔Artist
+	- ✔Album
+	- ✔Play time
+- ✔Convert playtime string to integer representing seconds
+	- Parses strings in format "mm:ss","m:ss","m:s"
+	- Assumes entries without ":" are seconds
+- ✔Create new Song objects
+- ✔Calculate average play time to 2 decimal places
+- ✔Find song closest to 240 seconds
+- ✔Sort and display playlist

@@ -1,0 +1,198 @@
+---------------------------------
+Download and Unpack Support Files
+---------------------------------
+Archive:  p2-jukeboxhero-support.zip
+  inflating: jimmy_buffett-collection.csv  
+  inflating: music-collection.csv    
+  inflating: Song.java               
+-------------------
+Testing Song.java
+-------------------
+Checking SongTest.java for changes...
+Song.java matches original
+-------------------
+---------------------------------------
+Compiling JukeboxHeroEC.java using javac
+---------------------------------------
+JukeboxHeroEC.java compiled successfully
+--------------------------
+Beginning (L)oad test
+--------------------------
+	*****************************
+	*      Program Menu         *
+	*****************************
+	       (L)oad catalog
+	       (S)earch catalog
+	       (A)nalyse catalog
+	       (P)rint catalog
+	       (Q)uit
+	Please enter a command (press m for Menu): Load Catalog...
+	Please enter catalog file to load: Successfully loaded 1125 songs!
+	Please enter a command (press m for Menu): Error: Input not recognized. Please enter valid selection.
+	Goodbye!
+-->Expected: Successfully loaded 1125 songs!
+--------------------------
+(L)oad test complete
+--------------------------
+--------------------------
+Beginning (S)earch test
+--------------------------
+	*****************************
+	*      Program Menu         *
+	*****************************
+	       (L)oad catalog
+	       (S)earch catalog
+	       (A)nalyse catalog
+	       (P)rint catalog
+	       (Q)uit
+	Please enter a command (press m for Menu): Load Catalog...
+	Please enter catalog file to load: Successfully loaded 1125 songs!
+	Please enter a command (press m for Menu): Search Catalog...
+	Please enter the search query: Found 2 matches
+	----------------------------------------------------------------------------------------
+	Cheese Cake                    Aerosmith            Night In The Ruts                255
+	Cheeseburger in Paradise       Jimmy Buffett        Songs You Know by Heart          172
+	Please enter a command (press m for Menu): Error: Input not recognized. Please enter valid selection.
+	Goodbye!
+-->Expected: 	Cheese Cake                    Aerosmith            Night In The Ruts                255
+-->Expected: 	Cheeseburger in Paradise       Jimmy Buffett        Songs You Know by Heart          172
+--------------------------
+(S)earch test complete
+--------------------------
+--------------------------
+Beginning (A)nalyse test
+--------------------------
+	*****************************
+	*      Program Menu         *
+	*****************************
+	       (L)oad catalog
+	       (S)earch catalog
+	       (A)nalyse catalog
+	       (P)rint catalog
+	       (Q)uit
+	Please enter a command (press m for Menu): Load Catalog...
+	Please enter catalog file to load: Successfully loaded 1125 songs!
+	Please enter a command (press m for Menu): Catalog Analysis...
+		Number of Artists: 9
+		Number of Albums: 112
+		Number of Songs: 1125
+		Catalog Playtime: 284550
+	Please enter a command (press m for Menu): Error: Input not recognized. Please enter valid selection.
+	Goodbye!
+-->Expected: Number of Artists: 9
+-->Expected: Number of Albums: 112
+-->Expected: Number of Songs: 1125
+-->Expected: Catalog Playtime: 79:02:30 or Catalog Playtime: 284550
+--------------------------
+(A)nalyse test complete
+--------------------------
+--------------------------
+Beginning (P)rint test
+--------------------------
+	*****************************
+	*      Program Menu         *
+	*****************************
+	       (L)oad catalog
+	       (S)earch catalog
+	       (A)nalyse catalog
+	       (P)rint catalog
+	       (Q)uit
+	Please enter a command (press m for Menu): Load Catalog...
+	Please enter catalog file to load: Successfully loaded 23 songs!
+	Please enter a command (press m for Menu): Song list contains 23 songs...
+	----------------------------------------------------------------------------------------
+	Woman Goin' Crazy On Caroli... Jimmy Buffett        Havana Daydreamin'               250
+	My Head Hurts My Feet Stink... Jimmy Buffett        Havana Daydreamin'               155
+	The Captain and the Kid        Jimmy Buffett        Havana Daydreamin'               198
+	Big Rig                        Jimmy Buffett        Havana Daydreamin'               211
+	Defying Gravity                Jimmy Buffett        Havana Daydreamin'               163
+	Havana Daydreamin'             Jimmy Buffett        Havana Daydreamin'               219
+	Cliches                        Jimmy Buffett        Havana Daydreamin'               166
+	Something So Feminine About... Jimmy Buffett        Havana Daydreamin'               212
+	Kick It In Second Wind         Jimmy Buffett        Havana Daydreamin'               237
+	This Hotel Room                Jimmy Buffett        Havana Daydreamin'               190
+	Cheeseburger in Paradise       Jimmy Buffett        Songs You Know by Heart          172
+	He Went to Paris               Jimmy Buffett        Songs You Know by Heart          209
+	Fins                           Jimmy Buffett        Songs You Know by Heart          205
+	Son of a Son of a Sailor       Jimmy Buffett        Songs You Know by Heart          205
+	A Pirate Looks at Forty        Jimmy Buffett        Songs You Know by Heart          232
+	Margaritaville                 Jimmy Buffett        Songs You Know by Heart          251
+	Come Monday                    Jimmy Buffett        Songs You Know by Heart          189
+	Changes in Latitudes Change... Jimmy Buffett        Songs You Know by Heart          195
+	Why Don't We Get Drunk         Jimmy Buffett        Songs You Know by Heart          162
+	Pencil Thin Mustache           Jimmy Buffett        Songs You Know by Heart          170
+	Grapefruit-Juicy Fruit         Jimmy Buffett        Songs You Know by Heart          176
+	Boat Drinks                    Jimmy Buffett        Songs You Know by Heart          157
+	Volcano                        Jimmy Buffett        Songs You Know by Heart          218
+	Please enter a command (press m for Menu): Error: Input not recognized. Please enter valid selection.
+	Goodbye!
+-->Expected: 23 Jimmy Buffett Song objects displayed using toString()
+--------------------------
+(P)rint test complete
+--------------------------
+--------------------------
+Beginning Invalid Command test
+--------------------------
+	*****************************
+	*      Program Menu         *
+	*****************************
+	       (L)oad catalog
+	       (S)earch catalog
+	       (A)nalyse catalog
+	       (P)rint catalog
+	       (Q)uit
+	Please enter a command (press m for Menu): Error: Input not recognized. Please enter valid selection.
+	Please enter a command (press m for Menu): Error: Input not recognized. Please enter valid selection.
+	Goodbye!
+-->Expected: Invalid selection!
+--------------------------
+Invalid Command test complete
+--------------------------
+--------------------------
+Beginning Invalid Catalog test
+--------------------------
+	*****************************
+	*      Program Menu         *
+	*****************************
+	       (L)oad catalog
+	       (S)earch catalog
+	       (A)nalyse catalog
+	       (P)rint catalog
+	       (Q)uit
+	Please enter a command (press m for Menu): Load Catalog...
+	Please enter catalog file to load: Unable to open file: invalid.csv
+	Please enter a command (press m for Menu): Error: Input not recognized. Please enter valid selection.
+	Goodbye!
+-->Expected: Unable to open file: invalid.csv
+--------------------------
+Invalid Catalog test complete
+--------------------------
+--------------------------
+Beginning Empty Catalog test
+--------------------------
+	*****************************
+	*      Program Menu         *
+	*****************************
+	       (L)oad catalog
+	       (S)earch catalog
+	       (A)nalyse catalog
+	       (P)rint catalog
+	       (Q)uit
+	Please enter a command (press m for Menu): Search Catalog...
+	Please enter the search query: Found 0 matches
+	----------------------------------------------------------------------------------------
+	Please enter a command (press m for Menu): Catalog Analysis...
+		Number of Artists: 0
+		Number of Albums: 0
+		Number of Songs: 0
+		Catalog Playtime: 0
+	Please enter a command (press m for Menu): Song list contains 0 songs...
+	----------------------------------------------------------------------------------------
+	Please enter a command (press m for Menu): Error: Input not recognized. Please enter valid selection.
+	Goodbye!
+-->Expected: (Search) Found 0 matches
+-->Expected: (Analyze) 0 Artists, 0 Albums, 0 Songs, 0 Playtime
+-->Expected: (Print) Song list contains 0 songs
+--------------------------
+Empty Catalog test complete
+--------------------------
