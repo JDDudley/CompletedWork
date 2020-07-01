@@ -1,0 +1,13 @@
+Activity 0 Reflection
+
+- Class name needs to match filename, is case-sensitive.
+- Semicolons required, won't compile without lines ended properly.
+- Compiler does not know when to stop parsing with missing closing curly brace(s)
+- String literals need to be closed, compiler will catch error if unclosed
+- main method's name is case-sensitive
+- Method must be public to compile correctly.
+- In Java, double quotes are required for strings.
+
+The class name is case-sensitive and must match filename exactly. Semicolons are required, and the code won't compile without lines ending properly. The compiler does not know when to stop parsing if closing curly braces are missing. String literals need to be closed, and must use double quotes. Compiler will throw error if unclosed or single quotes. Method name for main is case-sensitive and must be public to compile correctly.
+
+In Java, double quotes are required for strings.
